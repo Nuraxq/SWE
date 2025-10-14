@@ -1,8 +1,9 @@
 public class Fibonacci {
-    public static void main(int n){
-
-        fib(n);
+    public static void main(String[] args) throws Exception {
+        
+        fib(10);
     }
+
 
     public static void fib(int n) {
         int a = 0;

@@ -1,12 +1,12 @@
-public class App {
+public class Test {
     public static void main(String[] args) throws Exception {
 
         try{
-            Fraction test1 = new Fraction(5,2);
-            Fraction test2 = new Fraction(30,3);
+            Fraction test1 = new Fraction(1,2);
+            Fraction test2 = new Fraction(5,10);
             Fraction test3 = new Fraction(-20,2);
 
-            
+
             System.out.println("Test fürs Erstellen:");
             System.out.println(test1.toString());
             System.out.println(test2.toString());
@@ -24,8 +24,8 @@ public class App {
             Fraction test6 = test2.divide(test1);
             System.out.println(test6.toString());
 
-            Fraction[] frac_arr = {test2,test3,test4};
-            Fraction test7 = test1.divide(frac_arr);
+            
+            Fraction test7 = test1.multiply(test2,test3,test4);
             System.out.println(test7.toString());
 
 

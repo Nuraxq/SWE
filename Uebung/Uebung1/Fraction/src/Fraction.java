@@ -34,10 +34,10 @@ public class Fraction {
     }
 
     
-    Fraction divide(Fraction[] fractions){
+    Fraction multiply(Fraction... factors){
         Fraction temp = new Fraction(this.numerator,this.denominator);
-        for(int i = 0; i < fractions.length; i++){
-            temp = temp.divide(fractions[i]);
+        for(int i = 0; i < factors.length; i++){
+            temp = temp.multiply(factors[i]);
         }
         return temp;
     }
