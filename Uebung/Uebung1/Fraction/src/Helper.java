@@ -20,6 +20,4 @@ public class Helper {
         }
         return a;
     }
-
-    
 }

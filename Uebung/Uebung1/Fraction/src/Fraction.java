@@ -1,6 +1,6 @@
 public class Fraction {
-    int numerator;
-    int denominator;
+    private int numerator_;
+    private int denominator_;
 
     Fraction(int numerator){
         this(numerator,1);
@@ -12,30 +12,35 @@ public class Fraction {
             throw new IllegalArgumentException("Nenner ist 0! Ungueltig!");
         }
         int teiler = Helper.ggT(numerator,denominator);
-        this.numerator = numerator / teiler;
-        this.denominator = denominator /teiler;
+        this.numerator_ = numerator / teiler;
+        this.denominator_ = denominator /teiler;
 
+
+        if((this.numerator_ < 0 && this.denominator_ < 0) || this.denominator_ < 0 ){
+            this.numerator_ = -this.numerator_;
+            this.denominator_ = -this.denominator_;
+        }
     }
 
-    Fraction multiply(Fraction factor){
-        Fraction result = new Fraction(this.numerator * factor.numerator, this.denominator*factor.denominator);
+    public Fraction multiply(Fraction factor){
+        Fraction result = new Fraction(this.numerator_ * factor.numerator_, this.denominator_*factor.denominator_);
         return result;
     }
 
     // Erstellt aus dem Int eine Fraction und teilt mithilfe der Fractionsdivison
-    Fraction multiply(int factor){
+    public Fraction multiply(int factor){
         Fraction temp = new Fraction(factor);
         return multiply(temp);
     }
     // Wir multiplizieren mit dem Kehrwert um zu teilen
-    Fraction divide(Fraction divisor){
-        Fraction temp = new Fraction(divisor.denominator, divisor.numerator);
+    public Fraction divide(Fraction divisor){
+        Fraction temp = new Fraction(divisor.denominator_, divisor.numerator_);
         return multiply(temp);
     }
 
     
-    Fraction multiply(Fraction... factors){
-        Fraction temp = new Fraction(this.numerator,this.denominator);
+    public Fraction multiply(Fraction... factors){
+        Fraction temp = new Fraction(this.numerator_,this.denominator_);
         for(int i = 0; i < factors.length; i++){
             temp = temp.multiply(factors[i]);
         }
@@ -43,6 +48,14 @@ public class Fraction {
     }
    
     public String toString(){
-        return Integer.toString(numerator) + "/" + Integer.toString(denominator);
+        return Integer.toString(numerator_) + "/" + Integer.toString(denominator_);
+    }
+
+
+    public int numerator(){
+        return this.numerator_;
+    }
+    public int denominator(){
+        return this.denominator_;
     }
 }
