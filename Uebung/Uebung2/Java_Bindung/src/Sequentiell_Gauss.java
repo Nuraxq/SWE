@@ -1,17 +1,17 @@
 // Beispielklasse um eine Sequentielle Bindung zu zeigen
 // Die Klassenmethode gaus_summe berechnet sehr umständlich die n-te Gaussumme.
-public class Bindung_Sequentiell {
+public class Sequentiell_Gauss {
 
     // Gibt einfach nur die n-te Gaus summe auf die Konsole aus.
     public static void main(String[] args) throws Exception {
-        System.out.println(Bindung_Sequentiell.gauss_summe(100));
+        System.out.println(Sequentiell_Gauss.gauss_summe(100));
     }
 
     // Berechnet die Gaussumme
     public static int gauss_summe(int n){
         int[] arr = create_array(n);
-        Bindung_Sequentiell.fill_array(arr);
-        int summe = Bindung_Sequentiell.berechne_summe(arr);
+        Sequentiell_Gauss.fill_array(arr);
+        int summe = Sequentiell_Gauss.berechne_summe(arr);
         return summe;
     }
     
