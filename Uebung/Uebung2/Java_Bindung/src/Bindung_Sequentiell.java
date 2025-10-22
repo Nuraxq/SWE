@@ -4,7 +4,7 @@ public class Bindung_Sequentiell {
 
     // Gibt einfach nur die n-te Gaus summe auf die Konsole aus.
     public static void main(String[] args) throws Exception {
-        System.out.println(Bindung_Sequentiell.gauss_summe(10));
+        System.out.println(Bindung_Sequentiell.gauss_summe(100));
     }
 
     // Berechnet die Gaussumme
@@ -18,7 +18,7 @@ public class Bindung_Sequentiell {
 
     // Erstellt ein n-großes Array
     private static int[] create_array(int n){
-        return new int[5];
+        return new int[n];
     }
 
     // Füllt ein Array mit den Zahlen 1- (length) auf.
