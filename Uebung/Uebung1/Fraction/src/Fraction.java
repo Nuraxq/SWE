@@ -2,12 +2,12 @@ public class Fraction {
     private int numerator_;
     private int denominator_;
 
-    Fraction(int numerator){
+    public Fraction(int numerator){
         this(numerator,1);
     }
 
     // Erstellt die Fraction und prueft ob der Nenner 0 ist.
-    Fraction(int numerator,int denominator){
+    public Fraction(int numerator,int denominator){
         if(denominator == 0){
             throw new IllegalArgumentException("Nenner ist 0! Ungueltig!");
         }
