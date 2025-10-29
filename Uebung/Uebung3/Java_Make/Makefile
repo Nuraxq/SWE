@@ -1,7 +1,6 @@
 BIN_DIR = bin
 JC = javac
 SRC = src/A.java src/B.java src/Main.java
-CLASSES = A.class B.class Main.class
 JAVA = java
 
 #Wir geben die Version aus und lassen dann das Programm laufen. 
