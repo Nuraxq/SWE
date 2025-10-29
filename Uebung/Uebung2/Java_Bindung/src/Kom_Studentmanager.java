@@ -7,6 +7,7 @@ public class Kom_Studentmanager {
         Kom_Studentmanager.isAdult(Niklas);
     }
 
+    // Gibt den Notendurchschnitt auf die Konsole aus
     public static void berechne_durchschnitt(Kom_Student student){
         int summe = 0;
         for(int note : student.getNoten()){
@@ -15,7 +16,7 @@ public class Kom_Studentmanager {
         summe = summe/student.getNoten().length;
         System.out.println("Der Notenschnitt ist: " + summe); 
     }
-
+    // Gibt aus ob der Student über 18 ist
     public static void isAdult(Kom_Student student){
         if (student.getAlter() >= 18){
             System.out.println("Student ist Erwachsen");
@@ -25,3 +26,5 @@ public class Kom_Studentmanager {
         }
     }
 }
+// Es liegt eine Kommunikatorische Bindung vor, da das Modul Kom_Studentmanager für seine Operationen einen 
+// ADT Student verwendet und alle Funktionen des Moduls auf diesem Datentyp agieren.

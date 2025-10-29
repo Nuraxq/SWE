@@ -1,0 +1,23 @@
+a) Erstellung einer detaillierten Beschreibung der zu liefernden Funktionen und Anforderungen
+	- Spezifikationsphase -> Es wird genau Festgelegt welche Leistung geliefert werden soll
+
+b) Planung der Struktur und der Aufteilung des Systems in einzelne Komponenten
+ 	- Entwurfsphase -> Die Software und Systemarchitektur wird entworfen
+
+c) Sicherstellung des reibungslosen Ablaufs beim Endanwender
+	- Wartungsphase -> Es werden Fehler behoben sodass das System funktionstüchtig ist
+
+d) Erfassung und Auswertung der Erwartungen des Kunden
+	- Anforderungsphase -> Die Kundenwünsche werden Analysiert
+
+e) Entwicklung der einzelnen Programmbestandteile durch das Team
+	- Implementierungsphase -> Die einzelnen Module werden gebaut und getestet
+
+f) Einschätzung der benötigten Zeit und Ressourcen für die Umsetzung
+	- Planungsphase -> Es wird abgeschätzt wie viel Arbeit für das Projekt nötig ist
+
+g) Übergabe des fertigen Produkts an den Endkunden
+	- Integrationsphase -> Das Produkt wird beim Kunden installiert
+
+h) Abschaltung der aktiven Komponenten
+	- Rückzugsphase -> Die Nutzung wird eingestellt

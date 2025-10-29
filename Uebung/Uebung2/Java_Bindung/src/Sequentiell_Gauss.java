@@ -1,5 +1,12 @@
 // Beispielklasse um eine Sequentielle Bindung zu zeigen
 // Die Klassenmethode gaus_summe berechnet sehr umständlich die n-te Gaussumme.
+
+/*
+ * Es liegt eine Sequentielle Bindung vor, da die gauss_summe Methode alle anderen Methoden 
+ * in fester Reihenfolge aufrufen muss um eine passende Lösung zu erhalten.  
+ * Die Methoden sind private und können nur durch gauss_summe aufgerufen werden -> Aufruf hängt direkt zusammen
+ * und muss immer ganz erfolgen. 
+ */
 public class Sequentiell_Gauss {
 
     // Gibt einfach nur die n-te Gaus summe auf die Konsole aus.
